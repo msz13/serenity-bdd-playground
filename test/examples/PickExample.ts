@@ -34,3 +34,17 @@ class Examples {
             .where(Text, equals(name))
             .first()
 }
+
+export const CreateEvent = { 
+
+    viaApiWithParticipantLimit(participantsLimit: number) {
+        return Task.where('Organiser creates Event')
+    }
+}
+
+export const VisitEventPage = 
+{
+    forEvent(eventName: string) {
+        return Task.where('Particiapnt enteres event page')
+    }
+}

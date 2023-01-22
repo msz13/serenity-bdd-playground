@@ -1,0 +1,13 @@
+
+
+it("Should enable wating list", ()=> {
+
+    agnes.attemptsTo(CreateEvent.ForEvent(eventName).viaApiWithParticipantLimit(2))  
+    john.atemptsTo(ConfirmAttendande.ForEvent(eventName))
+    peter.atemptsTo(ConfirmAttendande.ForEvent(eventName))
+
+    joana.attemptsTo(
+         VisitEventPage.forEvent(eventName))
+         Ensure(WaitngList.Isenabled())
+    )
+})
